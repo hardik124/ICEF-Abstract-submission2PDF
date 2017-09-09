@@ -35,8 +35,8 @@ function savePDFNamed(i) {
   console.log("Converting abstract titled :"+row[4]);
 
   page.open('file:///home/f390/115400802059ac04d0b3219/user-detail-named.html?num='+i, function() {
-  page.render('./Named abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf',{format: 'pdf', quality: '100'});
-  console.log("Saved at :"+'./Named abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf');
+  page.render('Named abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf',{format: 'pdf', quality: '100'});
+  console.log("Saved at :"+'Named abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf');
   console.log("===============================================================");
   savePDFNamed(i+1)
   });
@@ -52,8 +52,8 @@ function savePDFAnon(i) {
   console.log("Converting abstract titled :"+row[4]);
 
   page.open('file:///home/f390/115400802059ac04d0b3219/user-detail-anon.html?num='+i, function() {
-  page.render('./Anonymous abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf',{format: 'pdf', quality: '100'});
-  console.log("Saved at :"+'./Anonymous abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf');
+  page.render('Anonymous abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf',{format: 'pdf', quality: '100'});
+  console.log("Saved at :"+'Anonymous abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf');
   console.log("==================================================================");
   savePDFAnon(i+1)
   });

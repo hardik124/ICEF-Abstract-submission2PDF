@@ -13,7 +13,7 @@ successFunction = function(data) {
   document.getElementById("abstract").innerHTML = row[5]
   document.getElementById("JEL").innerHTML = row[7]
   document.getElementById("keywords").innerHTML = row[6]
-  document.getElementById('email').innerHTML = "Email : "+row[2]
+  document.getElementById('email').innerHTML = "Email : "+row[9]
   var affl = document.getElementById("affiliations")
   affl.innerHTML = row[8]
 //});
