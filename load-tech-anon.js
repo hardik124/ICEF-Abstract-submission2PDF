@@ -16,7 +16,7 @@ successFunction = function(data) {
 
 form = $('.body'),
 $.ajax({
-  url: './AbstractSubmission.csv',
+  url: './Abstract Submission..csv',
   dataType: 'text',
 }).done(successFunction);
 

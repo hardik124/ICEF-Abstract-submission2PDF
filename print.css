@@ -1,6 +1,6 @@
 html {
   margin-right: auto;
-  padding: 2  %;  
+  padding: 2  %;
 }
 body {
   width:100%;
@@ -24,6 +24,7 @@ body {
 .horizontal h2 {
   color: #000033;
   width: auto;
+  padding: 2%;
   font-size: 80%;
   height: auto;
   display: inline-block;

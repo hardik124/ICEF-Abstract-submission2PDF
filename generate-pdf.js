@@ -2,7 +2,7 @@
 var csvData  = []
 const counterFile = './counter.txt'
 var fs = require('fs');
-var csv = fs.open('AbstractSubmission.csv','r')
+var csv = fs.open('Abstract Submission..csv','r')
 csvData = csv.read().split('\"\n');
 var page = require('webpage').create();
 
