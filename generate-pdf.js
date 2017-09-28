@@ -1,6 +1,5 @@
 
 var csvData  = []
-const counterFile = './counter.txt'
 var fs = require('fs');
 var csv = fs.open('Abstract Submission..csv','r')
 csvData = csv.read().split('\"\n');
@@ -34,7 +33,7 @@ function savePDFNamed(i) {
   var row = csvData[i].split("\",\"")
   console.log("Converting abstract titled :"+row[4]);
 
-  page.open('file:///home/f390/115400802059ac04d0b3219/user-detail-named.html?num='+i, function() {
+  page.open('file:///home/f390/ICEF-Abstract-submission2PDF/user-detail-named.html?num='+i, function() {
   page.render('Named abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf',{format: 'pdf', quality: '100'});
   console.log("Saved at :"+'Named abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf');
   console.log("===============================================================");
@@ -51,7 +50,7 @@ function savePDFAnon(i) {
   var row = csvData[i].split("\",\"")
   console.log("Converting abstract titled :"+row[4]);
 
-  page.open('file:///home/f390/115400802059ac04d0b3219/user-detail-anon.html?num='+i, function() {
+  page.open('file:///home/f390/ICEF-Abstract-submission2PDF/user-detail-anon.html?num='+i, function() {
   page.render('Anonymous abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf',{format: 'pdf', quality: '100'});
   console.log("Saved at :"+'Anonymous abstracts/'+row[3].replace("/"," and ")+'/'+row[4].replace("/"," and ")+'.pdf');
   console.log("==================================================================");

@@ -7,7 +7,7 @@ successFunction = function(data) {
   var n  = unescape(temp[1]);
   var row = allRows[n].split("\",\"")
 
-  document.getElementById("title").innerHTML = row[4]
+  document.getElementById("title").innerHTML = row[3]
   document.getElementById("aai").innerHTML = "ICEF-"+(aai-(2*n))
   document.getElementById("abstract").innerHTML = row[5]
   document.getElementById("JEL").innerHTML = row[7]
